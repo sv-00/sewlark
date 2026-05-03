@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   reactCompiler: false,
   output: "standalone",
 
+  // Allow dev access from reverse-proxied domain
+  allowedDevOrigins: ["sewlark-v.dopolabs.com"],
+
   // Security headers
   headers: async () => [
     {
